@@ -5,109 +5,84 @@
     <title>Document</title>
 </head>
 <body>
+   <header>
     <h1>Aanmelden</h1>
-
         <p>Bent u geïnteresseerd in samenwerken met CMD Amsterdam? Dat kan
         Tijdens de opleiding werken studenten aan projecten voor echte
         opdrachtgevers. Ook lopen de studenten stage, in het tweede en
         afstudeerjaar.
-
         CMD Amsterdam zoekt altijd naar positieve verbindingen met de
         creatieve stad Amsterdam.
-
         Voor het aanmelden van stageplekken of projecten kunt u onderstaand
         formulier invullen. Wij nemen zo nodig contact met u op nadat het
         formulier is verstuurd. Voor vragen of opmerkingen kunt u contact
-        [<a href="http://www.cmd-amsterdam.nl/contact/" target="_blank">opbouw
-        studie programma</a>] met ons op. </p>
+        [<a href="http://www.cmd-amsterdam.nl/contact/" target="_blank">]opbouw
+        studie programma</a> met ons op. </p>
+    </header>
 
+    <form>
+    <fieldset>
+     <legend>Contactgegevens:</legend>
+                <label>Naam: <input type="text" name="je_naam" placeholder="voornaam + achternaam" autofocus/></label><br/>
+                <label>Adres:<input type="text" name="je_adres" /></label><br/>
+                <label>Postcode: <input type="text" name="je_postcode" placeholder="1234 AB"/></label><br/>
+                <label>Plaats: <input type="text" name="je_plaats" /></label><br/>
+                <label>Telefoon: <input type="tel" name="je_telefoon" placeholder="0612345678"/></label><br/>
+                <label>Email: <input type="email" name="je_email" /></label><br/>
 
-     <h2>Contactgegevens:</h2>
-
-           <form>
-                Naam:     <br/>        <input type="text" name="je_naam" placeholder="voornaam + achternaam" autofocus/><br/>
-                Adres:    <br/>        <input type="text" name="je_adres" /><br/>
-                Postcode: <br/>        <input type="text" name="je_postcode" placeholder="1234 AB"/><br/>
-                Plaats:   <br/>        <input type="text" name="je_plaats" /><br/>
-                Telefoon: <br/>        <input type="text" name="je_telefoon" placeholder="0612345678"/><br/>
-                Email:    <br/>        <input type="email" name="je_email" /><br/>
-           </form>
-
-     <h2>Ik wil mijn aanmelden:</h2>
-
+        <label>Ik wil mijn aanmelden:
            <select>
                   <option value="voor een project">Voor een project</option>
                   <option value="als bedrijf">Als bedrijf</option>
            </select>
+        </label>
+    </fieldset>
 
-    <h2><u>Project:</u></h2>
+   <fieldset>
+    <legend>Project:</legend>
+                <label>Titel:  <input type="text" name="de titel" /></label><br/>
+                <label>Opdrachtsomschrijving:<input type="text" name="omschrijving" /></label><br/>
+                <label>Doelgroepomschrijving:<input type="text" name="doelgroep" /></label><br/>
+                <label>Doelstelling/ intentie van het project: <input type="text" name="doelstelling" /></label><br/>
+                <label>Looptijd: <input type="date" name="datumpicker" /></label>
+                <label>tot: <input type="date" name="datumpicker" /></label><br/>
+                <label>Deadline: <input type="date" name="deadline datum" /></label><br/>
 
-           <form>
-                Titel: <br/>
-                <input type="text" name="de titel" /><br/>
-                Opdrachtsomschrijving: <br/>
-                <input type="text" name="omschrijving" /><br/>
-                Doelgroepomschrijving: <br/>
-                <input type="text" name="doelgroep" /><br/>
-                Doelstelling/ intentie van het project: <br/>
-                <input type="text" name="doelstelling" /><br/>
-                <b>Looptijd:</b> <br/>
-                Begin datum: <br/>
-                <input type="date" name="datumpicker" /><br/>
-                Eind datum: <br/>
-                <input type="date" name="datumpicker" /><br/>
-                Deadline: <br/>
-                <input type="date" name="deadline datum" /><br/>
-           </form>
+    <p>Geschikt voor:</p>
+                <label><input type="checkbox" name ="geschikt" value="eerstejaars student" >eerstejaars studenten</label><br/>
+                <label><input type="checkbox" name ="geschikt" value="tweedejaars studenten" >tweedejaars studenten</label><br/>
+                <label><input type="checkbox" name ="geschikt" value="derdejaars studenten" >derdejaars studenten</label><br/>
+                <label><input type="checkbox" name ="geschikt" value="derdejaars studenten" >derdejaars studenten</label><br/>
+                <label><input type="checkbox" name ="geschikt" value="onbekend" >onbekend</label><br/>
+    </fieldset>
 
+    <fieldset>
+     <legend>Stage:</legend>
 
-        <h4>Geschikt voor:</h4>
+            <p>Geschikt voor:</p>
+                <label><input type="checkbox" name ="voor" value="tweedejaars student">tweedejaars studenten</label><br/>
+                <label><input type="checkbox" name ="voor" value="afstudeer studenten">afstudeer studenten</label><br/>
+                <label><input type="checkbox" name ="voor" value="onbekend">onbekend</label><br/>
 
-           <form>
-                <input type="checkbox" name ="geschikt" value="eerstejaars student" >eerstejaars studenten<br/>
-                <input type="checkbox" name ="geschikt" value="tweedejaars studenten" >tweedejaars studenten<br/>
-                <input type="checkbox" name ="geschikt" value="derdejaars studenten" >derdejaars studenten<br/>
-                <input type="checkbox" name ="geschikt" value="derdejaars studenten" >derdejaars studenten<br/>
-                <input type="checkbox" name ="geschikt" value="onbekend" >onbekend<br/>
-           </form>
+            <p>Hoe lang duurt de stage?</p>
+                <label><input type="radio" name ="voor" value="tien weken">10 weken</label><br/>
+                <label><input type="radio" name ="voor" value="twintig weken">20 weken</label><br/>
 
-     <h2><u>Stage:</u></h2>
+            <p>Begin datum:</p>
+                <label><input type="date" name="begin datum" /></label><br/>
 
-            <h4>Geschikt voor:</h4>
-
-            <form>
-                <input type="checkbox" name ="voor" value="tweedejaars student">tweedejaars studenten<br/>
-                <input type="checkbox" name ="voor" value="afstudeer studenten">afstudeer studenten<br/>
-                <input type="checkbox" name ="voor" value="onbekend">onbekend<br/>
-            </form>
-
-        <h4>Hoe lang duurt de stage?</h4>
-            <select>
-                <option value="10 weken">10 weken</option>
-                <option value="20 weken">20 weken</option>
-            </select>
-
-        <h4>Begin datum:</h4>
-            <form>
-                <input type="date" name="begin datum" /><br/>
-            </form>
-
-
-        <h4>Beschrijving werkzaamheden:</h4>
-
-           <form>
-                Beschrijving: <br/>        <input type="text" name="beschrijving" /><br/>
-                Adres:        <br/>        <input type="text" name="adres" /><br/>
-                Postcode:     <br/>        <input type="text" name="postcode" placeholder="1234 AB" /><br/>
-                Plaats:       <br/>        <input type="text" name="plaats" /><br/>
-                Sector:       <br/>        <input type="text" name="sector" /><br/>
-                Core business:<br/>        <input type="text" name="core business" /><br/>
-                opmerkingen:  <br/>         <textarea name="opmerkingen" rows="5" cols="50"></textarea><br/>
-           </form>
-
+            <p>Beschrijving werkzaamheden:</p>
+                <label>Beschrijving: <input type="text" name="beschrijving" /></label><br/>
+                <label>Adres: <input type="text" name="adres" /></label><br/>
+                <label>Postcode: <input type="text" name="postcode" placeholder="1234 AB" /></label><br/>
+                <label>Plaats: <input type="text" name="plaats" /></label><br/>
+                <label>Sector: <input type="text" name="sector" /></label><br/>
+                <label>Core business: <input type="text" name="core business" /></label><br/>
+                <label>opmerkingen: <textarea name="opmerkingen"></textarea></label><br/>
+        </fieldset>
 
         <input type="submit" value="verstuur">
-
+    </form>
 
 </body>
 </html>
